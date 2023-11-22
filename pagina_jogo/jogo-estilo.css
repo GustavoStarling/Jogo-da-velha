@@ -89,3 +89,12 @@ body {
 .pos.x::after {
     transform: rotate(-45deg);
 }
+
+.pos.o::before, .pos.o::after {
+    content: "";
+    height: calc(100px * 0.75);
+    width: calc(100px * 0.75);
+    background: black;
+    border-radius: 50%;
+    position: absolute;
+}
