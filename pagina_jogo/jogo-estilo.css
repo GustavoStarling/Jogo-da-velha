@@ -81,3 +81,11 @@ body {
     background: black;
     position: absolute;
 }
+
+.pos.x::before {
+    transform: rotate(45deg);
+}
+
+.pos.x::after {
+    transform: rotate(-45deg);
+}
