@@ -61,3 +61,11 @@ body {
 .pos:nth-child(1), .pos:nth-child(2), .pos:nth-child(3) {
     border-top: none;
 }
+
+.pos:nth-child(1), .pos:nth-child(4), .pos:nth-child(7) {
+    border-left: none;
+}
+
+.pos:nth-child(3), .pos:nth-child(6), .pos:nth-child(9) {
+    border-right: none;
+}
