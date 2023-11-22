@@ -28,3 +28,11 @@ body {
     font-size: 6em;
     color: white;
 }
+
+#btn-vitoria, #btn-retorno, #btn-creditos {
+    font-size: 1.5em;
+    background-color: rgb(77, 129, 232);
+    padding: 1% 1.5%;
+    border-radius: 1rem;
+    cursor: pointer;
+}
