@@ -47,3 +47,13 @@ body {
     align-items: center;
     grid-template-columns: repeat(3, auto);
 }
+
+.pos {
+    width: 100px;
+    height: 100px;
+    display: flex;
+    border: 2px solid white;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
