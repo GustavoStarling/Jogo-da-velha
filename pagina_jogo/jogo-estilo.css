@@ -9,3 +9,22 @@ body {
     width: 100vw;
     background: linear-gradient(45deg, #414040, #2f203d,#333397,  #30289b, #2127d8);
 }
+
+#vitoria {
+    display: none;
+    flex-direction: column;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(100, 27, 27);
+    opacity: 0.8;
+}
+
+#texto-vitoria {
+    font-size: 6em;
+    color: white;
+}
