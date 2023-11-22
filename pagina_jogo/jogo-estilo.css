@@ -69,3 +69,7 @@ body {
 .pos:nth-child(3), .pos:nth-child(6), .pos:nth-child(9) {
     border-right: none;
 }
+
+.pos:nth-child(7), .pos:nth-child(8), .pos:nth-child(9) {
+    border-bottom: none;
+}
