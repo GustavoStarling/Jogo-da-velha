@@ -73,3 +73,11 @@ body {
 .pos:nth-child(7), .pos:nth-child(8), .pos:nth-child(9) {
     border-bottom: none;
 }
+
+.pos.x::before, .pos.x::after {
+    content: "";
+    height: calc(100px * 0.1);
+    width: calc(100px * 0.75);
+    background: black;
+    position: absolute;
+}
