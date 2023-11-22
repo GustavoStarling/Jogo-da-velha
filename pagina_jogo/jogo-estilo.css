@@ -23,3 +23,8 @@ body {
     background-color: rgb(100, 27, 27);
     opacity: 0.8;
 }
+
+#texto-vitoria {
+    font-size: 6em;
+    color: white;
+}
