@@ -177,3 +177,17 @@ botao.addEventListener("click", function(){
     if(count==0)    alert("Conta Não Registrada");
     
 });
+linkCredLog.addEventListener("click", function() {
+    location.href = "pagina_creditos/creditos.html"
+});
+
+linkCredVit.addEventListener("click", function() {
+    location.href = "pagina_creditos/creditos.html"
+});
+
+voltarLog.addEventListener("click", function() {
+    document.getElementById("login-aparece").style.display = "flex";
+    localStorage.setItem("conta-logada", `none`);
+    document.getElementById("vitoria").style.display = "none";
+    clearBoard();
+});
