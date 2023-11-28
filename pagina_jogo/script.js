@@ -71,5 +71,18 @@ else {
         nVitorias: 0, 
         nPartidas: 0
     }]
-}         
+}  
+
+    for (let item of posEl) {
+    item.addEventListener("click", function() {
+         if (getComputedStyle(item).cursor != "not-allowed") {
+            if (count % 2 == 0)     item.classList.add("x");
+            else                    item.classList.add("o");
+
+            count++;
+
+            (count % 2) ? checkVitoria("x") : checkVitoria("o");
+         }
+    });
+}
 
