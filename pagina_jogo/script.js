@@ -52,3 +52,24 @@ else {
         nPartidas: 0
     },
 
+     let contasLidas;
+contasLidas = JSON.parse(localStorage.getItem("contas"));
+
+if (contasLidas != null) {
+    contas = contasLidas
+}
+else {
+    contas = [{
+        nome: "teste1",
+        senha: "qogbvoiadb",
+        nVitorias: 0, 
+        nPartidas: 0
+    },
+    {
+        nome: "teste2",
+        senha: "apsifnapvdkp",
+        nVitorias: 0, 
+        nPartidas: 0
+    }]
+}         
+
