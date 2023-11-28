@@ -170,3 +170,23 @@ body {
     background: linear-gradient(-90deg, #000000, #11051c,#191970, #120a8f);
     padding-bottom: 1.5%;
 }
+#titulo{
+    margin-top: 10%;
+    font-size: 2em;
+}
+
+h1{
+    font-weight: 3.5vw;
+    text-shadow: 3px 3px 3px #00BFFF;
+    text-align: center;
+    margin-top: 10%;
+    font-family: 'Source Code Pro', monospace;       
+    background: linear-gradient(-45deg, #191970, #0000CD, #6495ED, #120a8f, #87CEFA);
+    background-size: 300%;
+    text-transform: uppercase;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: animated_text 4s ease-in-out infinite;
+    -moz-animation: animated_text 5s ease-in-out infinite;
+    -webkit-animation: animated_text 5s ease-in-out infinite;
+}
