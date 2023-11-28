@@ -109,3 +109,12 @@ else {
             }
         };
 
+            localStorage.setItem("contas", JSON.stringify(contas));
+    }
+
+    if (count == 9 && !vitoria) {
+        count = 0;
+        document.getElementById("vitoria").style.display = "flex";
+        textoVitoriaEl.innerHTML = `Empate!`;
+        let contaLogada = localStorage.getItem("conta-logada");
+
