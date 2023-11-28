@@ -144,3 +144,10 @@ criarconta.addEventListener("click", function(){
             return;
         }
     }
+    let contaNova = {nome: nomeinput, senha: senhainput, nVitorias: 0, nPartidas: 0};
+    contas.push(contaNova);
+
+    localStorage.setItem("contas", JSON.stringify(contas));
+
+    alert("Conta registrada com sucesso!");
+}); 
