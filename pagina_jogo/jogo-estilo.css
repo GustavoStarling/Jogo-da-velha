@@ -119,3 +119,23 @@ body {
     align-items: center;
     background-image: linear-gradient(45deg, #000000, #11051c,#191970,  #120a8f, #01058a) ;
 }
+#ranking {
+    display: none;
+    flex-direction: column;
+    position: fixed;
+    margin-bottom: 3%;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(45deg, #000000, #11051c,#191970,  #120a8f, #01058a);
+}
+
+#btn-rank-voltar {
+    box-shadow: 4px 4px 4px lightgrey;
+    padding: 2vh;
+    width: 15%;
+    margin-bottom: 3%;
+}
