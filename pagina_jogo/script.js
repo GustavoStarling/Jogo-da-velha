@@ -118,3 +118,16 @@ else {
         textoVitoriaEl.innerHTML = `Empate!`;
         let contaLogada = localStorage.getItem("conta-logada");
 
+         let tam = contas.length;
+
+        for (let i=0; i<tam; i++) {
+            if (contas[i].nome == contaLogada) {
+                contas[i].nPartidas++;
+            }
+        }
+        localStorage.setItem("contas", JSON.stringify(contas));
+    }
+
+    return;
+}
+
