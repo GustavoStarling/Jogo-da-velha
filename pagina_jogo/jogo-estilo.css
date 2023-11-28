@@ -190,3 +190,26 @@ h1{
     -moz-animation: animated_text 5s ease-in-out infinite;
     -webkit-animation: animated_text 5s ease-in-out infinite;
 }
+@keyframes animated_text{
+    0%{
+        background-position: 0px 50%;
+    }
+    50%{
+        background-position: 100% 50%;
+    }
+    100%{
+        background-position: 0px 50%;
+    }
+}
+
+.botao{
+    margin: auto;
+    width: 80%;
+    margin-bottom: 4%;
+    padding: 2.5%;
+    box-shadow: 4px 4px 4px #00008B;
+    font-family: 'Source Code Pro', monospace;
+    color: white;
+    cursor: pointer;
+    background-color: #191970;
+}
