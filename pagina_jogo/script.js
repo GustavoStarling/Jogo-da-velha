@@ -127,3 +127,20 @@ function clearBoard() {
         item.classList.remove("o");
     }
 }
+criarconta.addEventListener("click", function(){
+    let nomeinput = document.querySelector("#nome").value; 
+    let senhainput = document.querySelector("#senha").value; 
+
+    if(nomeinput.length < 1 || senhainput.length < 8) {
+        alert("Nome/Senha Inválidos ou Não Preenchidos");
+        return;
+    };
+
+    let tam = contas.length;
+
+    for (let i=0; i<tam; i++) {
+        if(nomeinput == contas[i].nome) { 
+            alert("Nome Já Reservado");
+            return;
+        }
+    }
