@@ -99,3 +99,13 @@ else {
         textoVitoriaEl.innerHTML = `${jogador.toUpperCase()} venceu!`;
         let contaLogada = localStorage.getItem("conta-logada");
 
+        let tam = contas.length;
+
+        for (let i=0; i<tam; i++) {
+            if (contas[i].nome == contaLogada) {
+                contas[i].nVitorias++;
+                contas[i].nPartidas++;
+                qs(contas);
+            }
+        };
+
