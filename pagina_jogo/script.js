@@ -115,3 +115,15 @@ function checkVitoria(jogador) {
 
     return;
 }
+btnVitoriaEL.addEventListener("click", function() {
+    clearBoard();
+});
+
+function clearBoard() {
+    document.getElementById("vitoria").style.display = "none";
+
+    for (let item of posEl) {
+        item.classList.remove("x");
+        item.classList.remove("o");
+    }
+}
