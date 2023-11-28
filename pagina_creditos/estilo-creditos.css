@@ -18,3 +18,22 @@ body{
     animation: mudando 1s ease-out infinite alternate-reverse;
 }
 
+h1, p{
+    background: linear-gradient(#000000, #11051c,#191970,  #120a8f, #01058a);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+#retornar{
+    display: block;
+    margin: auto;
+    width: 80%;
+    margin-bottom: 4%;
+    padding: 1%;
+    box-shadow: 5px 5px 5px #00008B;
+    font-family: 'Source Code Pro', monospace;
+    color: white;
+    border-radius: 1rem;
+    cursor: pointer;
+    background-color: #191970;
+}
