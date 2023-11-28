@@ -177,6 +177,7 @@ botao.addEventListener("click", function(){
     if(count==0)    alert("Conta Não Registrada");
     
 });
+
 linkCredLog.addEventListener("click", function() {
     location.href = "pagina_creditos/creditos.html"
 });
