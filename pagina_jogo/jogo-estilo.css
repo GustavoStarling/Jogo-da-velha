@@ -139,3 +139,34 @@ body {
     width: 15%;
     margin-bottom: 3%;
 }
+#ranking table {
+    width: 50%;
+    height: 80%;
+    background-color: white;
+    border: 3px black solid;
+    box-shadow: 4px 4px 4px #00BFFF;
+    text-align: center;
+    padding: 2%;
+}
+
+#ranking table tbody tr td, #ranking table thead th{
+    padding: 1%;
+}
+
+#ranking table thead:first-child {
+    font-size: 1.5em;
+}
+
+#login{
+    display: grid;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 2.5% auto auto auto;
+    border-radius: 3%;
+    width: 30%;
+    height: 50%;
+    box-shadow: 5px 5px 5px #ADD8E6 ;
+    background: linear-gradient(-90deg, #000000, #11051c,#191970, #120a8f);
+    padding-bottom: 1.5%;
+}
