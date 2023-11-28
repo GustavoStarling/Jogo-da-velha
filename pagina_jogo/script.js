@@ -151,3 +151,29 @@ criarconta.addEventListener("click", function(){
 
     alert("Conta registrada com sucesso!");
 }); 
+botao.addEventListener("click", function(){
+    let nomeinput = document.querySelector("#nome").value; 
+    let senhainput = document.querySelector("#senha").value; 
+
+    let count = 0;
+    let tam = contas.length;
+
+    for (let i=0; i<tam; i++) {
+        if(nomeinput == contas[i].nome) {
+            count++;
+            if (senhainput == contas[i].senha) {
+                document.querySelector("#nome").value = "";
+                document.querySelector("#senha").value = "";
+                localStorage.setItem("conta-logada", `${nomeinput}`);
+                document.getElementById("login-aparece").style.display = "none";
+            }
+            else {
+                alert("Senha Incorreta");
+                return;
+            }
+        }
+    }
+
+    if(count==0)    alert("Conta Não Registrada");
+    
+});
