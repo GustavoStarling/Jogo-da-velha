@@ -86,3 +86,10 @@ else {
     });
 }
 
+    function checkVitoria(jogador) {
+    let vitoria = seqVitoria.some((sequencia) => {
+        return sequencia.every((indice) => {
+            return posEl[indice].classList.contains(jogador);
+        })
+    })
+
