@@ -51,29 +51,15 @@ else {
         nVitorias: 0, 
         nPartidas: 0
     },
-
-     let contasLidas;
-contasLidas = JSON.parse(localStorage.getItem("contas"));
-
-if (contasLidas != null) {
-    contas = contasLidas
-}
-else {
-    contas = [{
-        nome: "teste1",
-        senha: "qogbvoiadb",
-        nVitorias: 0, 
-        nPartidas: 0
-    },
     {
         nome: "teste2",
         senha: "apsifnapvdkp",
         nVitorias: 0, 
         nPartidas: 0
     }]
-}  
+}
 
-    for (let item of posEl) {
+for (let item of posEl) {
     item.addEventListener("click", function() {
          if (getComputedStyle(item).cursor != "not-allowed") {
             if (count % 2 == 0)     item.classList.add("x");
@@ -86,14 +72,14 @@ else {
     });
 }
 
-    function checkVitoria(jogador) {
+function checkVitoria(jogador) {
     let vitoria = seqVitoria.some((sequencia) => {
         return sequencia.every((indice) => {
             return posEl[indice].classList.contains(jogador);
         })
     })
 
-        if (vitoria) {
+    if (vitoria) {
         count = 0;
         document.getElementById("vitoria").style.display = "flex";
         textoVitoriaEl.innerHTML = `${jogador.toUpperCase()} venceu!`;
@@ -108,8 +94,7 @@ else {
                 qs(contas);
             }
         };
-
-            localStorage.setItem("contas", JSON.stringify(contas));
+        localStorage.setItem("contas", JSON.stringify(contas));
     }
 
     if (count == 9 && !vitoria) {
@@ -118,7 +103,7 @@ else {
         textoVitoriaEl.innerHTML = `Empate!`;
         let contaLogada = localStorage.getItem("conta-logada");
 
-         let tam = contas.length;
+        let tam = contas.length;
 
         for (let i=0; i<tam; i++) {
             if (contas[i].nome == contaLogada) {
@@ -130,4 +115,3 @@ else {
 
     return;
 }
-
