@@ -37,3 +37,14 @@ h1, p{
     cursor: pointer;
     background-color: #191970;
 }
+
+@keyframes mudando{
+    from{
+        margin-left: 25%;
+        width: 50%;
+    } 
+    to{
+        margin-left: 22%;
+        width: 55%;
+    }
+}
