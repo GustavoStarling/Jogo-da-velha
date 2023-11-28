@@ -93,3 +93,9 @@ else {
         })
     })
 
+        if (vitoria) {
+        count = 0;
+        document.getElementById("vitoria").style.display = "flex";
+        textoVitoriaEl.innerHTML = `${jogador.toUpperCase()} venceu!`;
+        let contaLogada = localStorage.getItem("conta-logada");
+
