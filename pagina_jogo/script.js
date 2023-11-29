@@ -229,3 +229,20 @@ function quickSort(vet, ini, fim)
     if(i < fim)
         quickSort(vet, i, fim);
 }
+
+btnRanking.addEventListener("click", function() {
+    document.getElementById("ranking").style.display = "flex";
+
+    crpTabela.innerHTML = "";
+
+    for (let i=0; i<10; i++) {
+        crpTabela.innerHTML += `<tr><td>${i+1}°</td><td>${contas[i].nome}</td><td>${contas[i].nVitorias}</td><td>${contas[i].nPartidas}</td></tr>`
+    }
+
+    document.getElementById("login-aparece").style.display = "none";
+})
+
+btnVoltarRank.addEventListener("click", function() {
+    document.getElementById("ranking").style.display = "none";
+    document.getElementById("login-aparece").style.display = "flex";
+})
