@@ -192,3 +192,40 @@ voltarLog.addEventListener("click", function() {
     document.getElementById("vitoria").style.display = "none";
     clearBoard();
 });
+
+
+function qs(vet)
+{
+    quickSort(vet, 0, vet.length - 1);
+}
+
+function quickSort(vet, ini, fim)
+{
+    var i = ini;
+    var f = fim;
+    var m = Math.floor((i + f)/2);
+
+    while(i < f)
+    {
+        while(vet[i].nVitorias > vet[m].nVitorias)
+            i++;
+
+        while(vet[f].nVitorias < vet[m].nVitorias)
+            f--;
+
+        if(i <= f)
+        {
+            var temp = vet[i];
+            vet[i] = vet[f];
+            vet[f] = temp;
+            i++;
+            f--;
+        }
+    }
+
+    if(f > ini)
+        quickSort(vet, ini, f);
+
+    if(i < fim)
+        quickSort(vet, i, fim);
+}
